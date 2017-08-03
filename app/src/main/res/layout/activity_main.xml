@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.monkey.dialogfragment.MainActivity">
+
+    <Button
+        android:id="@+id/btn_show_small_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="显示小对话框"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/btn_show_big_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="显示大对话框"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_show_small_dialog"
+        android:layout_marginTop="20dp"/>
+
+    <FrameLayout
+        android:id="@+id/fy_root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+    </FrameLayout>
+</RelativeLayout>
